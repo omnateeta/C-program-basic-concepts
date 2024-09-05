@@ -1,30 +1,31 @@
-//C program to search an element using linear search method
 #include<stdio.h>
 int main()
 {
 	int i,n,a[10],ser;
-	printf("Enter the n element\n");
+	printf("Enter the n element value:");
 	scanf("%d",&n);
-	printf("Enter your array elements\n ");
+	
+	printf("Enter %d array elements\n",n);
 	for(i=1;i<=n;i++)
 	{
 		scanf("%d",&a[i]);
 	}
-	printf("Enter your search element:");
+	printf("Enter search element:");
 	scanf("%d",&ser);
 	
 	for(i=1;i<=n;i++)
 	{
-		if(ser==a[i])
+		if(a[i]==ser)
 		{
 			printf("Element is found at %d location\n",i);
 			exit (0);
 		}
+	}
+		if(i>n)
+		{
+			printf("Element not found.\n");
+		}
 	
-	}
-	if(i>0)
-	{
-	  printf("Unsuccesful search.");
-	}
+
 	return 0;
 }
