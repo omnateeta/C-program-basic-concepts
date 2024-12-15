@@ -1,3 +1,4 @@
+//Demo for Single Dimension Array
 #include<stdio.h>
 #define MAX 48
 int main()
