@@ -14,3 +14,4 @@ int main()
 	printf("factorial of %d number is %d \n",num,fact);
 	return 0;
 }
+//In output enter :ex,3,4,5 etc
