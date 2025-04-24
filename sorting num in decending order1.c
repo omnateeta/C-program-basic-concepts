@@ -16,6 +16,7 @@ int main()
 		{
 			if(a[i]<a[j])
 			{
+				//swapping
 				temp=a[i];
 				a[i]=a[j];
 				a[j]=temp;
