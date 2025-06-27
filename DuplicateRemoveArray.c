@@ -42,28 +42,39 @@ Constraints:
 -100 <= nums[i] <= 100
 nums is sorted in non-decreasing order.
     /*
-#include<stdio.h>
-int main()
-{
-    int a[20],i,j,k,size;
-    printf("Enter the number of array elements:");
-    scanf("%d",&size);
-    printf("\nEnter the number of elements\n");
-    for(i=0;i<size;i++)
-        scanf("%d",&a[i]);
-    for(i=1;i<size;i++)
-     {
-        for(j=i+1;j<size;j++)
-        if(a[i]==a[j])
-        {
-            for(k=j;k<size;k++)
-             {
-                a[k]=a[k+1];
-                size--;
-                j--;
-             }
+#include <stdio.h>
+
+int removeDuplicates(int* nums, int numsSize){
+    if (numsSize == 0) return 0;
+
+    int i = 0;
+    for (int j = 1; j < numsSize; j++) {
+        if (nums[j] != nums[i]) {
+            i++;
+            nums[i] = nums[j];
         }
-     }
-     printf("The Removed Duplicates from Array:");
-     return 0;
+    }
+    return i + 1;
+}
+
+int main() {
+    int nums[20], size, i;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &size);
+
+    printf("Enter %d sorted elements:\n", size);
+    for(i = 0; i < size; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+    int k = removeDuplicates(nums, size);
+
+    printf("Array after removing duplicates: ");
+    for(i = 0; i < k; i++) {
+        printf("%d", nums[i]);
+        if (i != k - 1) printf(", ");
+    }
+
+    return 0;
 }
