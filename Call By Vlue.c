@@ -1,4 +1,4 @@
-//This program is about call by value
+//This program is about call by value.
 #include<stdio.h>
 void swapping(int x,int y);
 int main()
@@ -19,3 +19,4 @@ void swapping(int x,int y)
 	x=y;
 	y=temp;
 }
+
