@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-	int a[20],n,temp,i,j;
+	int a[20],n,temp,i,j; 
 	printf("n number\n");
 	scanf("%d",&n);
 	printf("unsorted array\n");
@@ -28,3 +28,4 @@ int main()
 	printf("%d\t",a[i]);
 	return 0;
 }
+
