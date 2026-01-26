@@ -5,7 +5,7 @@ int main()
 	int a[20],n,temp,i,j; 
 	printf("n number\n");
 	scanf("%d",&n);
-	printf("unsorted array\n");
+	printf("unsorted array\n");  
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
@@ -28,4 +28,5 @@ int main()
 	printf("%d\t",a[i]);
 	return 0;
 }
+
 
