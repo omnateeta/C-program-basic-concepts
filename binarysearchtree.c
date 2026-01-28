@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<conio.h>  
 
-
 struct BST{
 	int data;
 	struct BST *lchild;
@@ -160,5 +159,6 @@ int main()
 	}
 	return 0;
 }
+
 
 
