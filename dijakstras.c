@@ -1,5 +1,5 @@
 #include<stdio.h>
-void dij(int, int [20][20], int [20] ,int [20], int);
+void dij(int, int [20][20], int [20] ,int [20], int); 
 
 void main()
 {
@@ -77,3 +77,4 @@ Shortest path from 1 to 5 is 9
 Process exited after 36.56 seconds with return value 5
 Press any key to continue . . .
 */
+
