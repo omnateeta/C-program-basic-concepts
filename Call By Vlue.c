@@ -3,7 +3,7 @@
 void swapping(int x,int y);
 int main()
 {
-	int a=10,b=20;
+	int a=10,b=20; 
 	printf("Before swapping\n");
 	printf("a=%d\nb=%d\n",a,b);
 	swapping(a,b);
@@ -19,4 +19,5 @@ void swapping(int x,int y)
 	x=y;
 	y=temp;
 }
+
 
