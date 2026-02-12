@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{
+{  
 	int i,n,a[10],ser;
 	printf("Enter the n element value:");
 	scanf("%d",&n);
@@ -29,3 +29,4 @@ int main()
 
 	return 0;
 }
+
