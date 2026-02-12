@@ -3,7 +3,7 @@ int main()
 {  
 	int i,n,a[10],ser;
 	printf("Enter the n element value:");
-	scanf("%d",&n);
+	scanf("%d",&n) ;
 	
 	printf("Enter %d array elements\n",n);
 	for(i=1;i<=n;i++)
@@ -29,4 +29,5 @@ int main()
 
 	return 0;
 }
+
 
